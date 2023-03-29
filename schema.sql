@@ -1,8 +1,8 @@
--- CREATE TABLE table_name (
---     title VARCHAR(255),
---     time VARCHAR(255),
---     comments VARCHAR(255)
--- );
+CREATE TABLE table_name (
+    title VARCHAR(255),
+    time VARCHAR(255),
+    comments VARCHAR(255)
+);
 
 -- Add the id column to the table
 ALTER TABLE table_name ADD COLUMN id SERIAL PRIMARY KEY;

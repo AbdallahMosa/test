@@ -9,7 +9,7 @@ const axios = require('axios');
 const { Client } = require('pg')
 // let url = `postgres://abdallah:0000@localhost:5432/lab13`;
 
-const port = process.env.PORT
+const PORT = process.env.PORT
 
 let url = process.env.URL
 const client = new Client(url)
