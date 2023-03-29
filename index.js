@@ -3,11 +3,15 @@ const cors = require("cors")
 const app = express()
 app.use(express.json())
 app.use(cors());
-const PORT = 3001
+require('dotenv').config();
 const data = require("./data.json")
 const axios = require('axios');
 const { Client } = require('pg')
-let url = `postgres://abdallah:0000@localhost:5432/lab13`;
+// let url = `postgres://abdallah:0000@localhost:5432/lab13`;
+
+const port = process.env.PORT
+
+let url = process.env.URL
 const client = new Client(url)
 
 
